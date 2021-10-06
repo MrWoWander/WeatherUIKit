@@ -27,7 +27,7 @@ class CitisTableViewController: UITableViewController {
             cityCell.cityName = weath.city[indexPath.row].city
             
             let temp = weath.city[indexPath.row].fact.temp
-            cityCell.temp = temp > 0 ? "+\(temp)" : "\(temp)"
+            cityCell.temp = temp > 0 ? "+\(temp)°C" : "\(temp)°C"
             
         }
         

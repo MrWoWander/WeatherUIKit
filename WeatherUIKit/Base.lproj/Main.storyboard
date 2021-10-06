@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
-        <!--Citis Table View Controller-->
+        <!--Погода в городах-->
         <scene sceneID="lMH-cR-yEp">
             <objects>
                 <tableViewController id="3Da-I2-tzu" customClass="CitisTableViewController" customModule="WeatherUIKit" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             <outlet property="delegate" destination="3Da-I2-tzu" id="f6A-Dd-ZLv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qvs-De-lSN">
+                    <navigationItem key="navigationItem" title="Погода в городах" id="qvs-De-lSN">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="g6I-1Z-Ooy">
                             <connections>
                                 <action selector="addCity:" destination="3Da-I2-tzu" id="I5G-dE-S98"/>
