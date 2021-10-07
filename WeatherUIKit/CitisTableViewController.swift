@@ -35,8 +35,13 @@ class CitisTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "cityDetailedInfo", sender: indexPath)
     }
+    
+    
     @IBAction func addCity(_ sender: UIBarButtonItem) {
         
        let alert =  UIAlertController(title: "Выбрать город", message: nil, preferredStyle: .alert)
@@ -61,5 +66,16 @@ class CitisTableViewController: UITableViewController {
         alert.addAction(alertCancale)
         
         present(alert, animated: true, completion: nil)
+    }
+}
+
+
+extension CitisTableViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cityDetailedInfo",
+           let indexPath = sender as? IndexPath,
+           let vc = segue.destination as? CityDetailViewController {
+            vc.cityInfo = self.weath.city[indexPath.row]
+        }
     }
 }

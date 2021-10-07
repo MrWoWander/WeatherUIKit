@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0879E3270F026F00146F38 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0879E2270F026F00146F38 /* CityDetailViewController.swift */; };
 		6D1A1B78270E29BF00697E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A1B77270E29BF00697E8B /* AppDelegate.swift */; };
 		6D1A1B7A270E29BF00697E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A1B79270E29BF00697E8B /* SceneDelegate.swift */; };
 		6D1A1B7F270E29BF00697E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1A1B7D270E29BF00697E8B /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D0879E2270F026F00146F38 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
 		6D1A1B74270E29BF00697E8B /* WeatherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1A1B77270E29BF00697E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1A1B79270E29BF00697E8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				6D1A1B8F270E35EF00697E8B /* WeathInteractor.swift */,
 				6D1A1B91270E393900697E8B /* WeathModel.swift */,
 				6D1A1B8D270E2C1E00697E8B /* CityTableViewCell.swift */,
+				6D0879E2270F026F00146F38 /* CityDetailViewController.swift */,
 			);
 			path = WeatherUIKit;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				6D1A1B90270E35EF00697E8B /* WeathInteractor.swift in Sources */,
 				6D1A1B8C270E2AFC00697E8B /* CitisTableViewController.swift in Sources */,
 				6D1A1B78270E29BF00697E8B /* AppDelegate.swift in Sources */,
+				6D0879E3270F026F00146F38 /* CityDetailViewController.swift in Sources */,
 				6D1A1B92270E393900697E8B /* WeathModel.swift in Sources */,
 				6D1A1B8E270E2C1E00697E8B /* CityTableViewCell.swift in Sources */,
 				6D1A1B7A270E29BF00697E8B /* SceneDelegate.swift in Sources */,
