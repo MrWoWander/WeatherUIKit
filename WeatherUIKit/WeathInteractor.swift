@@ -66,6 +66,7 @@ class WeathInteractor: NSObject, WeathInteractorProtocol {
                 }
                 
                 weath.city = city
+                weath.coordinate = coordinate
                 
                 DispatchQueue.main.async {
                     self?.city.append(weath)

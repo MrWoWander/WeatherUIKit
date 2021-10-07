@@ -94,37 +94,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZk-hD-VnN">
-                                <rect key="frame" x="162.66666666666666" y="285" width="65" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feelsLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgL-M7-CID">
-                                <rect key="frame" x="162" y="357" width="66" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MRC-aa-NDr">
+                                <rect key="frame" x="0.0" y="448" width="390" height="396"/>
+                            </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-Ig-p7F">
-                                <rect key="frame" x="120" y="127" width="150" height="150"/>
+                                <rect key="frame" x="120" y="108" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RlC-Ig-p7F" secondAttribute="height" multiplier="1:1" id="hyD-ZE-QXc"/>
+                                </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LTb-o4-WXb">
+                                <rect key="frame" x="162" y="266" width="66" height="92"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZk-hD-VnN">
+                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="65" height="71.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feelsLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgL-M7-CID">
+                                        <rect key="frame" x="0.0" y="71.666666666666686" width="66" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tJe-eX-2NP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yZk-hD-VnN" firstAttribute="centerX" secondItem="tJe-eX-2NP" secondAttribute="centerX" id="2E7-0h-Tsz"/>
-                            <constraint firstItem="BgL-M7-CID" firstAttribute="top" secondItem="yZk-hD-VnN" secondAttribute="bottom" id="4z7-JA-X0L"/>
-                            <constraint firstItem="RlC-Ig-p7F" firstAttribute="top" secondItem="tJe-eX-2NP" secondAttribute="top" constant="39" id="8tW-hj-m3v"/>
-                            <constraint firstItem="RlC-Ig-p7F" firstAttribute="height" secondItem="aij-tc-Nd9" secondAttribute="height" multiplier="0.177725" id="FlP-F5-6XB"/>
-                            <constraint firstItem="BgL-M7-CID" firstAttribute="centerX" secondItem="yZk-hD-VnN" secondAttribute="centerX" id="JKJ-tA-qMP"/>
-                            <constraint firstItem="yZk-hD-VnN" firstAttribute="top" secondItem="RlC-Ig-p7F" secondAttribute="bottom" constant="8" symbolic="YES" id="Q62-9L-u80"/>
+                            <constraint firstItem="RlC-Ig-p7F" firstAttribute="top" secondItem="tJe-eX-2NP" secondAttribute="top" constant="20" id="8tW-hj-m3v"/>
+                            <constraint firstItem="MRC-aa-NDr" firstAttribute="leading" secondItem="tJe-eX-2NP" secondAttribute="leading" id="B9S-aZ-QMV"/>
+                            <constraint firstItem="MRC-aa-NDr" firstAttribute="top" secondItem="LTb-o4-WXb" secondAttribute="bottom" constant="90" id="KxL-3V-g2Z"/>
+                            <constraint firstItem="LTb-o4-WXb" firstAttribute="centerX" secondItem="tJe-eX-2NP" secondAttribute="centerX" id="aaJ-WU-iI9"/>
+                            <constraint firstItem="MRC-aa-NDr" firstAttribute="trailing" secondItem="tJe-eX-2NP" secondAttribute="trailing" id="dEK-5L-V3q"/>
+                            <constraint firstItem="LTb-o4-WXb" firstAttribute="top" secondItem="RlC-Ig-p7F" secondAttribute="bottom" constant="8" symbolic="YES" id="jCp-LN-N2l"/>
                             <constraint firstItem="RlC-Ig-p7F" firstAttribute="centerX" secondItem="tJe-eX-2NP" secondAttribute="centerX" id="msb-PE-OTx"/>
-                            <constraint firstItem="RlC-Ig-p7F" firstAttribute="width" secondItem="aij-tc-Nd9" secondAttribute="width" multiplier="0.384615" id="tvj-dV-KsO"/>
+                            <constraint firstItem="RlC-Ig-p7F" firstAttribute="leading" secondItem="tJe-eX-2NP" secondAttribute="leading" constant="120" id="nyJ-2P-XJz"/>
+                            <constraint firstAttribute="bottom" secondItem="MRC-aa-NDr" secondAttribute="bottom" id="ol7-eN-p7i"/>
+                            <constraint firstItem="tJe-eX-2NP" firstAttribute="trailing" secondItem="RlC-Ig-p7F" secondAttribute="trailing" constant="120" id="wZn-ZT-RS3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iFW-Yc-rNz"/>
                     <connections>
+                        <outlet property="cityMapView" destination="MRC-aa-NDr" id="gCh-t4-f3v"/>
                         <outlet property="feelsLikeLabel" destination="BgL-M7-CID" id="i4c-tY-PxG"/>
                         <outlet property="tempImageView" destination="RlC-Ig-p7F" id="Wp5-Zd-4s0"/>
                         <outlet property="tempLable" destination="yZk-hD-VnN" id="xtc-iO-ytJ"/>
@@ -132,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R4-O5-ICO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="87"/>
+            <point key="canvasLocation" x="1984.6153846153845" y="86.729857819905206"/>
         </scene>
     </scenes>
     <resources>

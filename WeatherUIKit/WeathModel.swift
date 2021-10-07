@@ -6,11 +6,12 @@
 //
 
 import Foundation
-
+import CoreLocation
 
 struct WeathModel: Codable {
     
     var city: String?
+    var coordinate: CLLocationCoordinate2D?
     var fact: WeathFactModel
     
     enum CodingKeys: String, CodingKey {
