@@ -22,4 +22,12 @@ struct WeathModel: Codable {
 struct WeathFactModel: Codable {
     
     var temp: Int
+    var feelsLike: Int
+    var icon: String
+    
+    enum CodingKeys: String, CodingKey {
+        case temp
+        case feelsLike = "feels_like"
+        case icon
+    }
 }

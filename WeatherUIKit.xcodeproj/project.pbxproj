@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D0879E3270F026F00146F38 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0879E2270F026F00146F38 /* CityDetailViewController.swift */; };
+		6D0879EE270F117600146F38 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0879ED270F117600146F38 /* SVGKit */; };
 		6D1A1B78270E29BF00697E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A1B77270E29BF00697E8B /* AppDelegate.swift */; };
 		6D1A1B7A270E29BF00697E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A1B79270E29BF00697E8B /* SceneDelegate.swift */; };
 		6D1A1B7F270E29BF00697E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1A1B7D270E29BF00697E8B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0879EE270F117600146F38 /* SVGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = WeatherUIKit;
+			packageProductDependencies = (
+				6D0879ED270F117600146F38 /* SVGKit */,
+			);
 			productName = WeatherUIKit;
 			productReference = 6D1A1B74270E29BF00697E8B /* WeatherUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 6D1A1B6B270E29BF00697E8B;
+			packageReferences = (
+				6D0879EC270F117600146F38 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			productRefGroup = 6D1A1B75270E29BF00697E8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D0879EC270F117600146F38 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				branch = 3.x;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D0879ED270F117600146F38 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D0879EC270F117600146F38 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D1A1B6C270E29BF00697E8B /* Project object */;
 }
